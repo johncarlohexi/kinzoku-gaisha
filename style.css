@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Logoとメニュー*/
+.kaisha-logo {
+    margin:0.5rem;
+    margin-left:5rem;
+}
+
+
+.menu-bar {
+    display: flex;
+    align-items: center;
+}
+.links {
+    margin-left:auto;
+}
+
+.list {
+    color:black;
+    text-decoration: none;
+    font-size:1.1rem;
+    margin-right:1.5rem;
+}
+
+@media (max-width: 768px) {
+    .links {
+      display: none;
+    }
+
+    .kaisha-logo {
+        margin-left:1rem;
+    }
+}
+
+/* Front Page */
+
+.front-pic {
+    height:70vh;
+
+    background-image:url("/images/yousetsu.jpg");
+    background-position: center;
+    background-size:cover;
+    color:white;
+}
+
+.pic-overlay {
+    width: 100%;;
+    height: 100%;
+
+    background-color: rgba(38, 33, 33, 0.3);
+}
+
+.pic-text {
+    padding-top:5rem;
+    padding-left:2rem;
+
+}
+.mirai {
+    font-size:3rem;
+
+    height:5rem;
+    font-family: 'Roboto Slab', serif;
+}
+.pic-text1 {
+    font-size:3rem;
+}
+
+@media (max-width: 768px) {
+    .mirai, .pic-text1 {
+      font-size:2.5rem;
+    }
+}
+
+/* Bottom Page */
+
+.kaisha-info {
+    height:7rem;
+    background-color: rgb(46, 86, 99);
+}
+
+.kaisha-gyomu {
+    box-sizing: border-box;
+    font-size:2.5rem;
+    color:white;
+    padding: 1.5rem 0 0 5rem;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+
+    height: 5rem;
+    width: 15rem;
+}
+
+/* Gyomu Box */
+
+.gyomu-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gyomu-boxes {
+    height:100%;
+
+    text-align: center;
+}
+
+p {
+    font-size:1rem;
+}
+.gyomu-title {
+    font-size:2rem;
+    margin-top:1rem;
+}
+.gyomu-desc {
+    margin-bottom:1rem;
+}
+.gb1-image {
+    max-width: 60%;
+    height: auto;
+    width: auto\9;
+}
+
+/* Saiyou */
+
+.saiyou-title {
+    margin-top:2rem;
+    height:7rem;
+    background-color: rgb(46, 86, 99);
+}
+
+.saiyou-box {
+    box-sizing: border-box;
+    font-size:2.5rem;
+    color:white;
+    padding: 1.5rem 0 0 5rem;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+
+
