@@ -11,32 +11,96 @@
     margin-left:5rem;
 }
 
-
-.menu-bar {
-    display: flex;
-    align-items: center;
-}
-.links {
-    margin-left:auto;
+li{
+    list-style:none;
 }
 
-.list {
-    color:black;
+a {
+    color:rgb(0, 0, 0);
     text-decoration: none;
-    font-size:1.1rem;
-    margin-right:1.5rem;
 }
 
-@media (max-width: 768px) {
-    .links {
-      display: none;
+.navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 0 24px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-link {
+    transition: 0.7s ease;
+}
+
+.nav-link :hover {
+    color:lightblue;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+
+    background-color:black;
+}
+
+@media(max-width:768px) {
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top:70px;
+        gap:0;
+        width: 100%;
+        flex-direction: column;
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item{
+        margin:16px 0;
+    }
+
+    .nav-menu.active {
+        left:0;
     }
 
     .kaisha-logo {
-        margin-left:1rem;
+        margin-left: 1rem;
     }
 }
-
 /* Front Page */
 
 .front-pic {
@@ -76,6 +140,7 @@
     }
 }
 
+
 /* Bottom Page */
 
 .kaisha-info {
@@ -84,7 +149,7 @@
 }
 
 .kaisha-gyomu {
-    box-sizing: border-box;
+
     font-size:2.5rem;
     color:white;
     padding: 1.5rem 0 0 5rem;
@@ -125,6 +190,21 @@ p {
     width: auto\9;
 }
 
+@media (max-width:768px) {
+
+    .kaisha-gyomu {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        font-size: 2rem;
+        align-items: center;
+        padding: 0;
+    }
+    .gyomu-desc {
+        margin:0 1rem;
+    }
+}
+
 /* Saiyou */
 
 .saiyou-title {
@@ -133,14 +213,25 @@ p {
     background-color: rgb(46, 86, 99);
 }
 
+
+
+
 .saiyou-box {
     box-sizing: border-box;
     font-size:2.5rem;
     color:white;
-    padding: 1.5rem 0 0 5rem;
+    padding: 1.5rem 0;
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
     text-align: center;
 }
 
+@media(max-width:768px) {
+    .saiyou-title {
+        height:6rem;
+    }
+    .saiyou-box {
+        font-size:1.7rem;
+    }
+}
 
 
