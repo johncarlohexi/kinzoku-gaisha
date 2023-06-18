@@ -245,6 +245,9 @@ p {
 
 /* Job Desc */
 
+#shokurui-select {
+    margin-top:0.5rem;
+}
 
 .job-text-title p {
     font-size:3rem;
@@ -260,12 +263,20 @@ p {
 }
 
 .jobs-desc {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
 .job-active-desc {
     height:30rem;
-    width: 100%;
-    background-color: rebeccapurple;
+    margin: 2rem 3rem;
+    min-width: 70%;
+    max-width: 70%;
+
+
+    font-size:1.5rem;
 }
 

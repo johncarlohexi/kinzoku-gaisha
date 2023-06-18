@@ -84,28 +84,36 @@
 
     <div class="saiyou">
 
-        <form action="#">
-            <label for="shokurui">職類</label>
-            <select name="languages" id="lang">
-              <option value="shokunin">溶接職人</option>
-              <option value="kanri">管理者</option>
-              <option value="cad">CADオペレーター</option>
-            </select>
-      </form>
+
 
       <div class="jobs-desc">
-        <div class="job-active">
+   
             <div class="job-text-title">
-                <p>溶接職人</p>
+                <p id="job-text-title-1">溶接職人</p>
             </div>
             <div class="naiyou-title">
                 <p>仕事内容</p>
             </div>
+
+            <form id="shokurui-select" action="#">
+                <label for="shokurui" >職類</label>
+                <select name="languages" id="jobs-title" onchange="changeJobDesc()">
+                  <option value="shokunin">溶接職人</option>
+                  <option value="kanri">管理者</option>
+                  <option value="cad">CADオペレーター</option>
+                </select>
+          </form>
+
             <div class="job-active-desc">
-                <div class="job-active-desc1
-                "></div>
+                <div id="job-active-desc1">
+                    接機器（溶接機、電極、ガス、溶接材料など）を使用して金属部品を結合するための技術を持っています。
+    彼らは図面や仕様書に基づいて溶接作業を計画し、金属の切断、加工、組み立てを行います
+    。一般的な溶接プロセスには、アーク溶接、ガス溶接、レーザー溶接などがあります。
+    安全性と品質を確保するために、適切な保護具（安全メガネ、保護服、手袋など）を着用し、作業環境を整えます。
+    彼らは金属部品の位置調整、溶接電流やガス流量の調節、溶接後の仕上げ作業（研磨、研削、塗装など）なども担当します
+                </div>
             </div>
-        </div>
+
       </div>
 
 
