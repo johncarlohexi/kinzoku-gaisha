@@ -35,19 +35,39 @@ const jobDescs = [{
     彼らは金属部品の位置調整、溶接電流やガス流量の調節、溶接後の仕上げ作業（研磨、研削、塗装など）なども担当します`
 }];
 
+const jobTerms = [{
+    shikaku: "溶接資格",
+    nenshu:"300万円~500万円"
+}, {
+    shikaku: "管理資格",
+    nenshu:"300万円~600万円"
+}, {
+
+    shikaku: "CADオペレーター資格",
+    nenshu:"300万円~550万円"
+}];
+
 function changeJobDesc() {
     let getValueJob = document.getElementById("jobs-title").value;
 
     if (getValueJob == "kanri") {
         document.getElementById("job-text-title-1").innerHTML = "管理者",
         document.getElementById("job-active-desc1").innerHTML = jobDescs[0].jobDesc;
+        document.getElementById("shikaku").innerHTML = jobTerms[1].shikaku;
+        document.getElementById("nenshu").innerHTML = jobTerms[1].nenshu;
 
     } else if (getValueJob == "cad") {
         document.getElementById("job-text-title-1").innerHTML = "CADオペレーター"
         document.getElementById("job-active-desc1").innerHTML = jobDescs[1].jobDesc;
+        document.getElementById("shikaku").innerHTML = jobTerms[2].shikaku;
+        document.getElementById("nenshu").innerHTML = jobTerms[2].nenshu;
+
     } else {
         document.getElementById("job-text-title-1").innerHTML = "溶接職人"
         document.getElementById("job-active-desc1").innerHTML = jobDescs[2].jobDesc;
+        document.getElementById("shikaku").innerHTML = jobTerms[0].shikaku;
+        document.getElementById("nenshu").innerHTML = jobTerms[0].nenshu;
+
     }
 }
 
